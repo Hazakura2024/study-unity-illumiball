@@ -7,6 +7,31 @@ public class Hole : MonoBehaviour
     // どのボールを吸い寄せるかタグで指定
     public string targetTag;
 
+    // ボールが入っているか
+    bool isHolding;
+
+    public bool IsHolding()
+    {
+        return isHolding;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == targetTag)
+        {
+            isHolding = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == targetTag)
+        {
+            isHolding = false;
+        }
+    }
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
