@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 71748618}
   m_Layer: 0
   m_Name: BallRed
-  m_TagString: Untagged
+  m_TagString: BallRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 1173746812}
   m_Layer: 0
   m_Name: BallGreen
-  m_TagString: Untagged
+  m_TagString: BallGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1973,7 +1973,7 @@ GameObject:
   - component: {fileID: 1364862299}
   m_Layer: 0
   m_Name: BallBlue
-  m_TagString: Untagged
+  m_TagString: BallBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
