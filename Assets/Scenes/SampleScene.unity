@@ -639,7 +639,7 @@ Light:
   m_Intensity: 3
   m_Range: 4
   m_SpotAngle: 53.475388
-  m_InnerSpotAngle: 30
+  m_InnerSpotAngle: 25
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -1051,6 +1051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570846434}
   - component: {fileID: 570846433}
+  - component: {fileID: 570846435}
   m_Layer: 0
   m_Name: HoleRed
   m_TagString: Untagged
@@ -1073,7 +1074,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1088,13 +1089,26 @@ Transform:
   m_GameObject: {fileID: 570846432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 3.67, z: 6.55}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.07, y: 4, z: 6.55}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 441558843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570846435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570846432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93550b3a98be5fc4c96849d19fab4690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hole
+  targetTag: BallRed
 --- !u!1 &697333502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,6 +2616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2049257787}
   - component: {fileID: 2049257786}
+  - component: {fileID: 2049257788}
   m_Layer: 0
   m_Name: HoleBlue
   m_TagString: Untagged
@@ -2624,7 +2639,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2639,13 +2654,26 @@ Transform:
   m_GameObject: {fileID: 2049257785}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -1.5, z: -5.5}
+  m_LocalPosition: {x: 3, y: 0, z: -5.5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 488258892}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2049257788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049257785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93550b3a98be5fc4c96849d19fab4690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hole
+  targetTag: BallBlue
 --- !u!1 &2062072185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,6 +2684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062072187}
   - component: {fileID: 2062072186}
+  - component: {fileID: 2062072188}
   m_Layer: 0
   m_Name: HoleGreen
   m_TagString: Untagged
@@ -2678,7 +2707,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2693,13 +2722,26 @@ Transform:
   m_GameObject: {fileID: 2062072185}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.69, y: -1.5, z: 1.17}
+  m_LocalPosition: {x: -2.69, y: 0, z: 1.17}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1273917499}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062072188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062072185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93550b3a98be5fc4c96849d19fab4690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hole
+  targetTag: BallGreen
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
