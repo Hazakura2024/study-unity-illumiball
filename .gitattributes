@@ -1,2 +1,2 @@
-# .mファイルを統計から除外する
-*.m linguist-vendored
+# .wltファイルを統計から除外する
+*.wlt linguist-vendored
